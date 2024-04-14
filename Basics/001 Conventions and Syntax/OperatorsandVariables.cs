@@ -13,12 +13,13 @@ public class Variables
         frenchFry = new Side();
         youngJimmy = new Employee();
 		foodCombo = new Combo();
-
+		
         Console.WriteLine("Hello, welcome to Burger Mart!");
         Console.WriteLine("My name is " + youngJimmy.employeeName + " and I'm " + youngJimmy.employeeAge + " years old!" );
         Console.WriteLine("Would you like one of our " + hamBurger.foodName + "s?" + " It's only $" + hamBurger.burgerPrice + "!");
         Console.WriteLine("Or how about one of our " + frenchFry.foodName + "?" + " They're always fresh and only $" + frenchFry.fryPrice + "!");
-		Console.WriteLine("You can also get them together for only $" + foodCombo.comboPrice + "!");
+		foodCombo.comboFry += hamBurger.burgerPrice;
+		Console.WriteLine("You can also get them together for only $" + foodCombo.comboFry + "!");
     }
 }
 
@@ -40,5 +41,5 @@ public class Employee {
 }
 
 public class Combo {
-    public float comboPrice = 11.99f;
+	public float comboFry = 1.01f;
 }
