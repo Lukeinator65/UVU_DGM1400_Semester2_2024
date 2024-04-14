@@ -33,19 +33,19 @@ public class Unit1AChallenge
 		money *= multIncome.incomeTwoDecades;
 		age += someDecades.twoDecades;
 		Console.WriteLine("");
-		Console.WriteLine("In two decades, you will be " + age + " years old.");
+		Console.WriteLine("In two decades, you will be " + age + " years old");
 		Console.WriteLine("and your money will multiply up to $" + money); 
 		
 		money *= multIncome.incomeFiveDecades;
 		age += someDecades.fiveDecades;
 		Console.WriteLine("");
-		Console.WriteLine("In three more decades, you will be " + age + " years old.");
+		Console.WriteLine("In three more decades, you will be " + age + " years old");
 		Console.WriteLine("and your money will multiply up to $" + money); 
 		
 		money *= multIncome.incomeTenDecades;
 		age += someDecades.tenDecades;
 		Console.WriteLine("");
-		Console.WriteLine("Finally, in five more decades, you will be " + age + " years old.");
+		Console.WriteLine("Finally, in five more decades, you will be " + age + " years old");
 		Console.WriteLine("and your money will multiply up to $" + money); 
     }
 }
