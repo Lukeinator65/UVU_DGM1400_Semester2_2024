@@ -1,12 +1,24 @@
+using System;
+
 public class Variables 
 {
     public Food hamBurger;
-    public Side 
+    public Side frenchFry;
+    public Employee youngJimmy;
+    public Combo foodCombo;
 
     public void Main()
     {
         hamBurger = new Food();
         frenchFry = new Side();
+        youngJimmy = new Employee();
+		foodCombo = new Combo();
+
+        Console.WriteLine("Hello, welcome to Burger Mart!");
+        Console.WriteLine("My name is " + youngJimmy.employeeName + " and I'm " + youngJimmy.employeeAge + " years old!" );
+        Console.WriteLine("Would you like one of our " + hamBurger.foodName + "s?" + " It's only $" + hamBurger.burgerPrice + "!");
+        Console.WriteLine("Or how about one of our " + frenchFry.foodName + "?" + " They're always fresh and only $" + frenchFry.fryPrice + "!");
+		Console.WriteLine("You can also get them together for only $" + foodCombo.comboPrice + "!");
     }
 }
 
@@ -20,4 +32,13 @@ public class Side {
     public int fryCount = 25;
     public string foodName = "French Fries";
     public float fryPrice = 2.99f;
+}
+
+public class Employee {
+    public string employeeName = "Jimmy";
+    public int employeeAge = 17;
+}
+
+public class Combo {
+    public float comboPrice = 11.99f;
 }
