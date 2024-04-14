@@ -12,7 +12,7 @@ public class Unit1AChallenge
 		
 		Console.WriteLine("Welcome to Decade Income Multiplier!");
 		Console.WriteLine("");
-		Console.WriteLine("For each decade, you money will be multiplied by that amount of decades!");
+		Console.WriteLine("For each decade, your money will be multiplied by that amount of decades!");
 		Console.WriteLine("");
 		
 		Console.WriteLine("Please enter your name:");
