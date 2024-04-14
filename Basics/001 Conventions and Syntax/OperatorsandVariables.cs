@@ -1,6 +1,6 @@
 using System;
 
-public class Variables 
+public class OperatorsAndVariables 
 {
     public Food hamBurger;
     public Side frenchFry;
