@@ -18,13 +18,13 @@ public class Temperature {
 	public void CheckTemp (int temp){
 		if(temp > 30) {
 		Console.WriteLine("");
-		Console.WriteLine("It's " + temp + " degrees celcius outside!" + " Make sure to stay hyrdated!");
-	} else if(temp == 20) {
+		Console.WriteLine("It's " + temp + "° celcius outside!" + " Make sure to stay hyrdated!");
+	} else if(temp >= 20) {
 			Console.WriteLine("");
-			Console.WriteLine("It's " + temp + " degrees celcius outside!" + " Its's very nice out!");
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " Its's very nice out!");
 		} else {
 			Console.WriteLine("");
-			Console.WriteLine("It's " + temp + " degrees celcius outside!" + " Make sure to wear a jacket!");
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " Make sure to wear a jacket!");
 		
 		}
 	}
