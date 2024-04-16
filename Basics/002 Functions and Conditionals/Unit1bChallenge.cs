@@ -21,12 +21,12 @@ public class Unit1bLab
 
 public class Temperature {
 	public void CheckTemp (int temp){
-		if(temp > 30) { //If user input temp is greater than 30, it will tell user to stay hydrated
+		if(temp > 40) { //If user input temp is greater than 30, it will tell user to stay hydrated
 		Console.WriteLine("");
-		Console.WriteLine("It's " + temp + "° celcius outside!" + " Make sure to stay hyrdated!");
-	} else if(30 >= temp && temp >= 20) { //If user input temp is less than 30 and greater than or equal to 20, it will tell user that its nice out
+		Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit too hot. May sure to stay inside, drink and stay cool!");
+	} else if(40 > temp && temp >= 30) { //If user input temp is less than 30 and greater than or equal to 20, it will tell user that its nice out
 			Console.WriteLine("");
-			Console.WriteLine("It's " + temp + "° celcius outside!" + " Its's very nice out!");
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty hot, so make sure to wear short cloths and to stay hydrated!");
 		} else { //If user input temp is anything else, it will tell user to wear a jacket
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " Make sure to wear a jacket!");
