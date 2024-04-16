@@ -1,21 +1,26 @@
 using System;
 					
-public class Unit1bLab
+public class Unit1bChallenge
 {
 	public Temperature tempInCelcius;
 	public Grader examGrader;
+	public SchoolSubject favSubject;
 	
 	public void Main(string[] args)
 	{
 		tempInCelcius = new Temperature();
 		examGrader = new Grader();
+		favSubject = new SchoolSubject();
 		
 		Console.WriteLine("Enter the current temperature in Celcius:");
 		int temp = Convert.ToInt32(Console.ReadLine()); //Takes user input and defines the temp
 		Console.WriteLine("Enter an exam grade:");
 		int grade = Convert.ToInt32(Console.ReadLine()); //Takes user input and defines the grade
+		Console.WriteLine("Enter your favorite subject:");
+		string subject = Console.ReadLine();
 		tempInCelcius.CheckTemp(temp); //Runs Temperature Check Operation
 		examGrader.CheckGrade(grade); //Runs Grade Check Operation
+		favSubject.CheckSubject(subject);
     }
 }
 
@@ -58,5 +63,29 @@ public class Grader {
 			Console.WriteLine("");
 			Console.WriteLine("Oh, that's not good. You got a " + grade + " on your exam." + " That's a F.");
 		}
+	}
+}
+
+public class SchoolSubject {
+	public enum Subjects {
+		English,
+		Math,
+		History,
+		Science,
+		Art,
+		PE
+	}
+	
+	public Subjects favSubject = (subject);
+
+	public void CheckSubject () {
+		switch (favSubject){
+			case Subjects.English:
+				Console.WriteLine("");
+				Console.WriteLine("Your favorite subject is English! Make sure to check your grammar and spelling!");
+				break;
+
+		}
+
 	}
 }
