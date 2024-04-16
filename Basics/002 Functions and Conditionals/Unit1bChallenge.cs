@@ -24,13 +24,13 @@ public class Temperature {
 		if(temp > 40) { //If user input temp is greater than 30, it will tell user to stay hydrated
 		Console.WriteLine("");
 		Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit too hot. May sure to stay inside, drink and stay cool!");
-	} else if(40 > temp && temp >= 30) { //If user input temp is less than 30 and greater than or equal to 20, it will tell user that its nice out
+		} else if(40 > temp && temp >= 30) { //If user input temp is less than 30 and greater than or equal to 20, it will tell user that its nice out
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty hot, so make sure to wear short clothes and to stay hydrated!");
-		} else if(30 > temp && temp >= 16) {
+		} else if(30 > temp && temp >= 18) {
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty warm. You may not need to wear short clothes, but you should still stay hydrated!");
-		} else if(16 > temp && temp >= 5) {
+		} else if(18 > temp && temp >= 5) {
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit cool, so you might want to wear a light jacket.");
 		} else { //If user input temp is anything else, it will tell user to wear a jacket
@@ -45,7 +45,7 @@ public class Grader {
 		if (grade >= 90) { //If user input grade is greater than or equal to 90, it will tell user they have an A
 		Console.WriteLine("");
 		Console.WriteLine("You got a " + grade + " on your exam!" + " That's an A!");
-	} else if(90 > grade && grade >= 80) { //If user input grade is less than 90 and is greater than or equal to 80, it will tell user they have a B
+		} else if(90 > grade && grade >= 80) { //If user input grade is less than 90 and is greater than or equal to 80, it will tell user they have a B
 			Console.WriteLine("");
 			Console.WriteLine("You got a " + grade + " on your exam!" + " That's a B!");
 		} else if(80 > grade && grade >= 70) { //If user input grade is less than 80 and is greater than or equal to 70, it will tell user they have an C
