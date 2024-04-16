@@ -26,11 +26,16 @@ public class Temperature {
 		Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit too hot. May sure to stay inside, drink and stay cool!");
 	} else if(40 > temp && temp >= 30) { //If user input temp is less than 30 and greater than or equal to 20, it will tell user that its nice out
 			Console.WriteLine("");
-			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty hot, so make sure to wear short cloths and to stay hydrated!");
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty hot, so make sure to wear short clothes and to stay hydrated!");
+		} else if(30 > temp && temp >= 16) {
+			Console.WriteLine("");
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty warm. You may not need to wear short clothes, but you should still stay hydrated!");
+		} else if(16 > temp && temp >= 5) {
+			Console.WriteLine("");
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit cool, so you might want to wear a light jacket.");
 		} else { //If user input temp is anything else, it will tell user to wear a jacket
 			Console.WriteLine("");
-			Console.WriteLine("It's " + temp + "° celcius outside!" + " Make sure to wear a jacket!");
-		
+			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty cold! You might want to wear a heavy jacket!");
 		}
 	}
 }
@@ -46,12 +51,12 @@ public class Grader {
 		} else if(80 > grade && grade >= 70) { //If user input grade is less than 80 and is greater than or equal to 70, it will tell user they have an C
 			Console.WriteLine("");
 			Console.WriteLine("You got a " + grade + " on your exam." + " That's a C.");
-			} else if(70 > grade && grade >= 60) { //If user input grade is less than 70 and is greater than or equal to 60, it will tell user they have an D
-				Console.WriteLine("");
-				Console.WriteLine("You got a " + grade + " on your exam." + " That's a D.");
-				} else { //If user input is less than 60, it will tell user they have an F
-					Console.WriteLine("");
-					Console.WriteLine("Oh, that's not good. You got a " + grade + " on your exam." + " That's a F.");
+		} else if(70 > grade && grade >= 60) { //If user input grade is less than 70 and is greater than or equal to 60, it will tell user they have an D
+			Console.WriteLine("");
+			Console.WriteLine("You got a " + grade + " on your exam." + " That's a D.");
+		} else { //If user input is less than 60, it will tell user they have an F
+			Console.WriteLine("");
+			Console.WriteLine("Oh, that's not good. You got a " + grade + " on your exam." + " That's a F.");
 		}
 	}
 }
