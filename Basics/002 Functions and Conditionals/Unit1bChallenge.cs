@@ -76,7 +76,7 @@ public class SchoolSubject {
 		PE
 	}
 	
-	public Subjects favSubject = (subject);
+	public Subjects favSubject = (string subject);
 
 	public void CheckSubject () {
 		switch (favSubject){
@@ -84,7 +84,22 @@ public class SchoolSubject {
 				Console.WriteLine("");
 				Console.WriteLine("Your favorite subject is English! Make sure to check your grammar and spelling!");
 				break;
-
+			case Subjects.Math:
+				Console.WriteLine("");
+				Console.WriteLine("Your favorite subject is Math! Make sure to keep practicing your equations!");
+				break;
+			case Subjects.History:
+				Console.WriteLine("");
+				Console.WriteLine("Your favorite subject is History! Make sure you know your facts!");
+				break;
+			case Subjects.Science:
+				Console.WriteLine("");
+				Console.WriteLine("Your favorite subject is Science! Make sure you know the periodic table!");
+				break;
+			case Subjects.Art:
+				Console.WriteLine("");
+				Console.WriteLine("Your favorite subject is Art! Make sure to put your heart into your work!");
+				break;
 		}
 
 	}
