@@ -5,6 +5,7 @@ public class Unit1bChallenge
 	public Temperature tempInCelcius;
 	public Grader examGrader;
 	public SchoolSubject favSubject;
+	
 	public void Main(string[] args)
 	{
 		tempInCelcius = new Temperature();
@@ -98,8 +99,8 @@ public class SchoolSubject
 		PE
 	}
 
-	public Subjects favSubject = (string subject);
-	public void CheckSubject()
+	public Subjects favSubject;
+	public void CheckSubject(string subject)
 	{
 		switch (favSubject)
 		{
