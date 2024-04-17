@@ -5,7 +5,6 @@ public class Unit1bChallenge
 	public Temperature tempInCelcius;
 	public Grader examGrader;
 	public SchoolSubject favSubject;
-	
 	public void Main(string[] args)
 	{
 		tempInCelcius = new Temperature();
@@ -96,34 +95,41 @@ public class SchoolSubject
 		History,
 		Science,
 		Art,
-		PE
+		PE,
 	}
 
 	public Subjects favSubject;
 	public void CheckSubject(string subject)
 	{
-		switch (favSubject)
+		if (Enum.TryParse(subject, true, out favSubject)) //Checks if the user input is equivalent to one of the subjects in the enum list, and changes value of favSubject to equating subject
 		{
-			case Subjects.English:
-				Console.WriteLine("");
-				Console.WriteLine("Your favorite subject is English! Make sure to check your grammar and spelling!");
-				break;
-			case Subjects.Math:
-				Console.WriteLine("");
-				Console.WriteLine("Your favorite subject is Math! Make sure to keep practicing your equations!");
-				break;
-			case Subjects.History:
-				Console.WriteLine("");
-				Console.WriteLine("Your favorite subject is History! Make sure you know your facts!");
-				break;
-			case Subjects.Science:
-				Console.WriteLine("");
-				Console.WriteLine("Your favorite subject is Science! Make sure you know the periodic table!");
-				break;
-			case Subjects.Art:
-				Console.WriteLine("");
-				Console.WriteLine("Your favorite subject is Art! Make sure to put your heart into your work!");
-				break;
+			switch (favSubject)
+			{
+				case Subjects.English: //In case subject is English, tells user to check grammar and spelling
+					Console.WriteLine("");
+					Console.WriteLine("Your favorite subject is English! Make sure to check your grammar and spelling!");
+					break;
+				case Subjects.Math: //In case subject is Math, tells user to practice equations
+					Console.WriteLine("");
+					Console.WriteLine("Your favorite subject is Math! Make sure to keep practicing your equations!");
+					break;
+				case Subjects.History: //In case subject is History, tells user to know their facts
+					Console.WriteLine("");
+					Console.WriteLine("Your favorite subject is History! Make sure you know your facts!");
+					break;
+				case Subjects.Science: //In case subject is Science, tells user to know the periodic table
+					Console.WriteLine("");
+					Console.WriteLine("Your favorite subject is Science! Make sure you know the periodic table!");
+					break;
+				case Subjects.Art: //In case subject is Art, tells user to put their heart into their work
+					Console.WriteLine("");
+					Console.WriteLine("Your favorite subject is Art! Make sure to put your heart into your work!");
+					break;
+				case Subjects.PE: //In case subject is PE, tells user to stay fit and hydrated
+					Console.WriteLine("");
+					Console.WriteLine("Your favorite subject is PE! Make sure to stay fit and hydrated!");
+					break;
+			}
 		}
 	}
 }
