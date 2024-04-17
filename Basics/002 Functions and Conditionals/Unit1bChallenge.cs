@@ -16,10 +16,10 @@ public class Unit1bChallenge
 		Console.WriteLine("Enter an exam grade:");
 		int grade = Convert.ToInt32(Console.ReadLine()); //Takes user input and defines the grade
 		Console.WriteLine("Enter your favorite subject:");
-		string subject = Console.ReadLine();
+		string subject = Console.ReadLine(); //Takes user input and defines subject
 		tempInCelcius.CheckTemp(temp); //Runs Temperature Check Operation
 		examGrader.CheckGrade(grade); //Runs Grade Check Operation
-		favSubject.CheckSubject(subject);
+		favSubject.CheckSubject(subject); //Runs Favorite Subject Operation
 	}
 }
 
@@ -28,27 +28,27 @@ public class Temperature
 	public void CheckTemp(int temp)
 	{
 		if (temp > 40)
-		{ //If user input temp is greater than 30, it will tell user to stay hydrated
+		{ //If user input temp is greater than 40, it will tell user to stay inside and to stay cool
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit too hot. May sure to stay inside, drink and stay cool!");
 		}
 		else if (40 > temp && temp >= 30)
-		{ //If user input temp is less than 30 and greater than or equal to 20, it will tell user that its nice out
+		{ //If user input temp is less than 40 and greater than or equal to 30, it will tell user that its pretty hot out
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty hot, so make sure to wear short clothes and to stay hydrated!");
 		}
 		else if (30 > temp && temp >= 18)
-		{
+		{ //If user input temp is less than 30 and greater than or equal to 18, it will tell user that its pretty warm out
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty warm. You may not need to wear short clothes, but you should still stay hydrated!");
 		}
 		else if (18 > temp && temp >= 5)
-		{
+		{ //If user input temp is less than 30 and greater than or equal to 18, it will tell user that its a bit cool out
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's a bit cool, so you might want to wear a light jacket.");
 		}
 		else
-		{ //If user input temp is anything else, it will tell user to wear a jacket
+		{ //If user input temp is anything else, it will tell user that is cold and to wear a heavy jacket
 			Console.WriteLine("");
 			Console.WriteLine("It's " + temp + "° celcius outside!" + " That's pretty cold! You might want to wear a heavy jacket!");
 		}
