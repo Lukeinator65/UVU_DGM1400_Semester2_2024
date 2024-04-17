@@ -130,6 +130,9 @@ public class SchoolSubject
 					Console.WriteLine("Your favorite subject is PE! Make sure to stay fit and hydrated!");
 					break;
 			}
+		} else {
+			Console.WriteLine("");
+			Console.WriteLine("That is not a valid subject input.");
 		}
 	}
 }
