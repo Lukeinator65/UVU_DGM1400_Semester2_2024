@@ -4,8 +4,10 @@ public class Program
 {
 	public void Main()
 	{
-		string[] cars = {"Mustang", "Camero", "HellCat"};
+		string[] cars = {"Mustang", "Camaro", "HellCat", "Corvette", "Viper", "Mclaren"};
 		Console.WriteLine(cars.Length);
-		Console.WriteLine(cars[1]);
+	foreach(var car in cars) {
+		Console.WriteLine("I love my " + car + ".");
+		}
 	}
 }
