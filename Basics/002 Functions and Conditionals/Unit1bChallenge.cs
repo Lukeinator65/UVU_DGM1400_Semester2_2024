@@ -20,7 +20,7 @@ public class Unit1bChallenge
 		string subject = Console.ReadLine();
 		tempInCelcius.CheckTemp(temp); //Runs Temperature Check Operation
 		examGrader.CheckGrade(grade); //Runs Grade Check Operation
-		favSubject.CheckSubject(subject);
+		favSubject.CheckSubject();
     }
 }
 
@@ -76,7 +76,7 @@ public class SchoolSubject {
 		PE
 	}
 	
-	public Subjects favSubject = (string subject);
+	public Subjects favSubject = Subjects.English;
 
 	public void CheckSubject () {
 		switch (favSubject){
