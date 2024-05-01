@@ -10,10 +10,12 @@ public class PlayerController : MonoBehaviour
     public float gravityModifier = 1.5f;
     public bool isOnGround = true;
     public bool gameOver = false;
+    private Animator playerAnim;
 
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        playerAnim = GetComponent<Animator>();
         Physics.gravity *= gravityModifier;
     }
 
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            playerAnim.SetTrigger("Jump_trig");
         }
         
     }
