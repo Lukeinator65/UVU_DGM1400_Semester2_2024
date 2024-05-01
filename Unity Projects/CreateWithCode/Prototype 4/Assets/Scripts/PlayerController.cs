@@ -8,6 +8,16 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     public float speed = 0.5f;
     private GameObject focalPoint;
+    public bool hasPowerup;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Powerup"))
+        {
+            hasPowerup = true;
+            Destroy(other.gameObject);
+        }
+    }
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();

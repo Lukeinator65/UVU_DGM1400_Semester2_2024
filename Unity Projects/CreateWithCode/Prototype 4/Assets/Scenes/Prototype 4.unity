@@ -537,6 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+  hasPowerup: 0
 --- !u!1001 &1403545340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -741,7 +742,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1108248547721728474, guid: ff80b758d53d79e459a5ce4cdd86c649, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1108248547721728474, guid: ff80b758d53d79e459a5ce4cdd86c649, type: 3}
       propertyPath: m_LocalPosition.y
@@ -749,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1108248547721728474, guid: ff80b758d53d79e459a5ce4cdd86c649, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 1108248547721728474, guid: ff80b758d53d79e459a5ce4cdd86c649, type: 3}
       propertyPath: m_LocalRotation.w
@@ -782,6 +783,10 @@ PrefabInstance:
     - target: {fileID: 1275268711344843620, guid: ff80b758d53d79e459a5ce4cdd86c649, type: 3}
       propertyPath: m_Name
       value: Power Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275268711344843620, guid: ff80b758d53d79e459a5ce4cdd86c649, type: 3}
+      propertyPath: m_TagString
+      value: Powerup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
