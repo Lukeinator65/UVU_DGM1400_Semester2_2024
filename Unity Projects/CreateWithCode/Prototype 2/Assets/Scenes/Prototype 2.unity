@@ -718,8 +718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 10
-  xRange: 10
+  speed: 12.5
+  xRange: 17
   projectilePrefab: {fileID: 8390323697257930418, guid: 7e834d092aef4ee48a667893e195f30d, type: 3}
 --- !u!1001 &1031601654943897565
 PrefabInstance:
@@ -729,6 +729,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2593864371981578096, guid: 232730fbcef59de4fa997b3ab9490b19, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2993573835465390425, guid: 232730fbcef59de4fa997b3ab9490b19, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -886,6 +890,10 @@ PrefabInstance:
     - target: {fileID: 3619701552971378030, guid: b28642c1d356aab4d8117c59bc384339, type: 3}
       propertyPath: m_Name
       value: Fox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423207318441223621, guid: b28642c1d356aab4d8117c59bc384339, type: 3}
+      propertyPath: speed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
