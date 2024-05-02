@@ -23,14 +23,14 @@ public class GameManager : MonoBehaviour
     {
         if(isGameOver)
         {
-            EndGame();
+            EndGame(); // Start EndGame method
         }
         else
-            gameOverText.gameObject.SetActive(false);     
+            gameOverText.gameObject.SetActive(false); // Keep UI Text Game Over hidden
     }
     public void EndGame()
     {
         gameOverText.gameObject.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0; // Freeze Time
     }
 }
