@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallDown : MonoBehaviour
 {
-    public float Speed = 1.0f;
+    public float speed = 5.0f;
     private Rigidbody objectRb;
 
     // Start is called before the first frame update
@@ -17,6 +17,6 @@ public class FallDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        objectRb.AddForce(Vector3.down * Speed);
+        objectRb.AddForce(Vector3.forward * -speed);
     }
 }
