@@ -11,6 +11,13 @@ public class PlayerController : MonoBehaviour
     public Transform blaster;
     public GameObject laserBolt;
 
+    public GameManager gameManager;
+
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
     // Update is called once per frame
     void Update()
     {
