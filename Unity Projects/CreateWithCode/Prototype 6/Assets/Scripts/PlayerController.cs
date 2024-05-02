@@ -38,17 +38,11 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
     //If space bar is pressed, fire laserBolt
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             //Create laserBolt at the blaster transform position maintaining the objects rotation.
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
         }
         
-    }
-
-    //Delete any object witha trigger that hits the player
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject);
     }
 }
